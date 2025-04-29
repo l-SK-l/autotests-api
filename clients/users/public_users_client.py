@@ -15,7 +15,7 @@ class CreateUserDict(TypedDict):
     firstName: str
     middleName: str
 
-class PublicUsersClient(APIClient):
+class CreateUserRequestDict(APIClient):
     """
     Клиент для работы с /api/v1/users
     """
