@@ -17,7 +17,7 @@ class CoursesClient(APIClient):
         :param query: Словарь с userId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get("/api/v1/courses", params=query)
+        return self.get("/api/v1/courses", params=query.model_dump(by_alias=True))
 
     def get_course_api(self, course_id: str) -> Response:
         """
@@ -46,7 +46,10 @@ class CoursesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f"/api/v1/courses/{course_id}", json=request.model_dump(by_alias=True))
+        return self.patch(
+            f"/api/v1/courses/{course_id}",
+            json=request.model_dump(by_alias=True)
+        )
 
     def delete_course_api(self, course_id: str) -> Response:
         """

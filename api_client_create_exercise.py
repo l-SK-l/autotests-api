@@ -5,7 +5,8 @@ from clients.exercises.exercises_schema import CreateExerciseRequestSchema
 from clients.files.files_client import get_files_client
 from clients.files.files_schema import CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
-from clients.users.public_users_client import get_public_users_client, CreateUserRequestSchema
+from clients.users.public_users_client import get_public_users_client
+from clients.users.users_schema import CreateUserRequestSchema
 from tools.fakers import get_random_email
 
 public_users_client = get_public_users_client()
@@ -48,7 +49,7 @@ create_course_request = CreateCourseRequestSchema(
 create_course_response = courses_client.create_course(create_course_request)
 print('Create course data:', create_course_response)
 
-create_exercise = CreateExerciseRequestSchema(
+create_exercise_request = CreateExerciseRequestSchema(
     title="Exercise 1",
     course_id=create_course_response.course.id,
     max_score=5,
@@ -57,5 +58,5 @@ create_exercise = CreateExerciseRequestSchema(
     description="Exercise 1",
     estimated_time="5 minutes"
 )
-create_exercises_response = exercises_client.create_exercises(create_exercise)
+create_exercises_response = exercises_client.create_exercises(create_exercise_request)
 print('Create exercise data:', create_exercises_response)
