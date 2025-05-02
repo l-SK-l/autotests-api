@@ -36,6 +36,8 @@ create_course_request = CreateCourseRequestSchema(
 create_course_response = courses_client.create_course(create_course_request)
 print('Create course data:', create_course_response)
 
-create_exercise_request = CreateExerciseRequestSchema()
+create_exercise_request = CreateExerciseRequestSchema(
+    course_id=create_course_response.course.id
+)
 create_exercises_response = exercises_client.create_exercises(create_exercise_request)
 print('Create exercise data:', create_exercises_response)
