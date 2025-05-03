@@ -4,11 +4,14 @@ import pytest
 
 from clients.authentication.authentication_client import AuthenticationClient
 from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema
+from clients.users.private_users_client import PrivateUsersClient
 from clients.users.public_users_client import PublicUsersClient
-from clients.users.users_schema import CreateUserRequestSchema
+from clients.users.users_schema import CreateUserRequestSchema, GetUserResponseSchema
 from tools.assertions.authentication import assert_login_response
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
+from tools.assertions.users import assert_create_user_response as assert_get_user_response
+from tests.conftest import UserFixture
 
 
 @pytest.mark.regression
@@ -28,3 +31,16 @@ def test_login(public_users_client: PublicUsersClient, authentication_client: Au
     assert_login_response(login_response_data)
 
     validate_json_schema(login_response.json(), login_response_data.model_json_schema())
+
+
+@pytest.mark.users
+@pytest.mark.regression
+def test_get_user_me(
+    private_users_client: PrivateUsersClient,
+    function_user: UserFixture
+):
+    response = private_users_client.get_user_me_api()
+    response_data = GetUserResponseSchema.model_validate_json(response.text)
+
+    assert_status_code(response.status_code, HTTPStatus.OK)
+    assert_get_user_response(response_data.user, function_user.response)
