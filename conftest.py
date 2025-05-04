@@ -51,9 +51,9 @@ def private_users_client(function_user: UserFixture) -> PrivateUsersClient:
     return get_private_users_client(function_user.authentication_user)
 
 
-pytest_plugins = (
+pytest_plugins = [
     "fixtures.users",
     "fixtures.files",
     "fixtures.courses",
-    "fixtures.authentication"
-)
+    "fixtures.exercises"
+]
