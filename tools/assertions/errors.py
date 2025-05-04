@@ -1,7 +1,7 @@
 from typing import Any, Sized
 
 from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorSchema, ValidationErrorResponseSchema
-from tools.assertions.base import assert_equal
+from tools.assertions.base import assert_equal, assert_length
 
 
 def assert_internal_error_response(
@@ -16,22 +16,6 @@ def assert_internal_error_response(
     :raises AssertionError: Если значения полей не совпадают.
     """
     assert_equal(actual.details, expected.details, "details")
-
-
-def assert_length(actual: Sized, expected: Sized, name: str):
-    """
-    Проверяет, что длины двух объектов совпадают.
-
-    :param name: Название проверяемого объекта.
-    :param actual: Фактический объект.
-    :param expected: Ожидаемый объект.
-    :raises AssertionError: Если длины не совпадают.
-    """
-    assert len(actual) == len(expected), (
-        f'Incorrect object length: "{name}". '
-        f'Expected length: {len(expected)}. '
-        f'Actual length: {len(actual)}'
-    )
 
 
 def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationErrorSchema):
