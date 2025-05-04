@@ -7,7 +7,7 @@ from clients.files.files_client import FilesClient
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, GetFileResponseSchema
 from fixtures.files import FileFixture
 from tools.assertions.base import assert_status_code
-from tools.assertions.files import assert_create_file_response, assert_create_file_with_empty_directory_response, assert_create_file_with_empty_filename_response, assert_file_not_found_response, assert_get_file_response
+from tools.assertions.files import assert_create_file_response, assert_create_file_with_empty_directory_response, assert_create_file_with_empty_filename_response, assert_file_not_found_response, assert_get_file_response, assert_get_file_with_incorrect_file_id_response
 from tools.assertions.schema import validate_json_schema
 
 @pytest.mark.files
@@ -83,4 +83,13 @@ class TestFiles:
         assert_file_not_found_response(get_response_data)
 
         # 6. Проверяем, что ответ соответствует схеме
+        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
+
+    def test_get_file_with_incorrect_file_id(self, files_client: FilesClient):
+        get_response = files_client.get_file_api("incorrect-file-id")
+        get_response_data = ValidationErrorResponseSchema.model_validate_json(get_response.text)
+
+        assert_status_code(get_response.status_code, HTTPStatus.UNPROCESSABLE_ENTITY)
+        assert_get_file_with_incorrect_file_id_response(get_response_data)
+
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
