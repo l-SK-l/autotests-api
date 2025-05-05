@@ -1,6 +1,6 @@
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, ExerciseSchema, GetExerciseResponseSchema, GetExercisesResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
 from clients.errors_schema import InternalErrorResponseSchema
-from tools.assertions.base import assert_equal
+from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response
 
 
@@ -53,17 +53,10 @@ def assert_get_exercises_response(
     :param create_exercise_responses: Список ответов API при создании упражнений.
     :raises AssertionError: Если данные упражнений не совпадают.
     """
-    assert len(get_exercises_response.exercises) >= len(create_exercise_responses), (
-        f"В списке упражнений ({len(get_exercises_response.exercises)}) меньше элементов, "
-        f"чем должно быть ({len(create_exercise_responses)})"
-    )
+    assert_length(get_exercises_response.exercises, create_exercise_responses, "exercises")
 
-    exercises_by_id = {exercise.id: exercise for exercise in get_exercises_response.exercises}
-
-    for create_response in create_exercise_responses:
-        exercise_id = create_response.exercise.id
-        assert exercise_id in exercises_by_id, f"Упражнение с ID={exercise_id} не найдено в списке"
-        assert_exercise(exercises_by_id[exercise_id], create_response.exercise)
+    for index, create_exercise_response in enumerate(create_exercise_responses):
+        assert_exercise(get_exercises_response.exercises[index], create_exercise_response.exercise)
 
 
 def assert_get_exercise_response(
