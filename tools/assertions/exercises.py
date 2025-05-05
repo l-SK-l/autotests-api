@@ -1,4 +1,4 @@
-from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, ExerciseSchema, GetExerciseResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, ExerciseSchema, GetExerciseResponseSchema, GetExercisesResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
 from clients.errors_schema import InternalErrorResponseSchema
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_internal_error_response
@@ -40,6 +40,30 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     assert_equal(actual.order_index, expected.order_index, "order_index")
     assert_equal(actual.description, expected.description, "description")
     assert_equal(actual.estimated_time, expected.estimated_time, "estimated_time")
+
+
+def assert_get_exercises_response(
+        get_exercises_response: GetExercisesResponseSchema,
+        create_exercise_responses: list[CreateExerciseResponseSchema]
+):
+    """
+    Проверяет, что ответ на получение списка упражнений соответствует списку созданных упражнений.
+
+    :param get_exercises_response: Ответ API при запросе списка упражнений.
+    :param create_exercise_responses: Список ответов API при создании упражнений.
+    :raises AssertionError: Если данные упражнений не совпадают.
+    """
+    assert len(get_exercises_response.exercises) >= len(create_exercise_responses), (
+        f"В списке упражнений ({len(get_exercises_response.exercises)}) меньше элементов, "
+        f"чем должно быть ({len(create_exercise_responses)})"
+    )
+
+    exercises_by_id = {exercise.id: exercise for exercise in get_exercises_response.exercises}
+
+    for create_response in create_exercise_responses:
+        exercise_id = create_response.exercise.id
+        assert exercise_id in exercises_by_id, f"Упражнение с ID={exercise_id} не найдено в списке"
+        assert_exercise(exercises_by_id[exercise_id], create_response.exercise)
 
 
 def assert_get_exercise_response(
