@@ -47,7 +47,7 @@ class TestUsers:
     @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.title("Get user me")
     @allure.severity(Severity.CRITICAL)
-    def test_ger_user_me(
+    def test_get_user_me(
             self,
             function_user: UserFixture,
             private_users_client: PrivateUsersClient
@@ -56,6 +56,6 @@ class TestUsers:
         response_data = GetUserResponseSchema.model_validate_json(response.text)
 
         assert_status_code(response.status_code, HTTPStatus.OK)
-        assert_get_user_response(response_data, function_user.response)
+        assert_get_user_response(response_data.user, function_user.response.user)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
