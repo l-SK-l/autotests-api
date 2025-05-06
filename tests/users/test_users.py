@@ -20,11 +20,16 @@ from tools.fakers import fake
 
 @pytest.mark.users
 @pytest.mark.regression
-@allure.tag("USERS", "REGRESSION")
+@allure.tag(AllureTag.USERS, AllureTag.REGRESSION)
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.USERS)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.USERS)
 class TestUsers:
     @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
     @allure.tag(AllureTag.CREATE_ENTITY)
     @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.title("Create user")
     @allure.severity(Severity.BLOCKER)
     def test_create_user(self, email: str, public_users_client: PublicUsersClient):
@@ -39,6 +44,7 @@ class TestUsers:
 
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     @allure.title("Get user me")
     @allure.severity(Severity.CRITICAL)
     def test_ger_user_me(
