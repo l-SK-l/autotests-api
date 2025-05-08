@@ -58,7 +58,7 @@ jobs:
 
       # 8. Шаг для сохранения папки с результатами тестов как артефакт
       - name: Upload allure-results as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()  # Сохраняем артефакт независимо от результата тестов
         with:
           name: allure-results
@@ -76,7 +76,7 @@ jobs:
 
       # 2. Шаг для загрузки артефакта allure-results из предыдущей джобы
       - name: Download allure-results artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results
           path: allure-results
