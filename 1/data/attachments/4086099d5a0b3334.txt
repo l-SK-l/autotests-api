@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE4OjQ4OjI2LjczMjkwOSIsInVzZXJfaWQiOiJhODY4YWU5Yi0zMDM4LTRmMDctODMyYi1jMzAyMTI3YTFiZmQifQ.ppwPlLfqyfIW6dPHsYwI5HTf5TQk09e9PyI3QFnQ2fI' \
+  -H 'content-length: 374' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Heavy apply reflect cultural writer record trial heart.","courseId":"f1554602-7c08-4ea1-8113-b5092288b19e","maxScore":81,"minScore":2,"orderIndex":11,"description":"Tonight under road south. Citizen cold side heart.\nLaw certainly soon pressure church loss. Produce remain true game raise argue color.\nSimple enjoy hair fight material.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE4OjQ4OjI1LjUzNzcyNSIsInVzZXJfaWQiOiI1NGExZDE2My0zZjcyLTQ0NTctYmUxNy0wNDE4Yjg0MTZhMzcifQ.-nEASxNOJsBeFeQ9PLQyEJcx8EWru_l1vfyNM70nnjo' \
+  -H 'content-length: 297' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Matter task hotel professional score early hundred.","courseId":"42104eb9-0a7e-4a11-aff7-562a2ee5f765","maxScore":94,"minScore":27,"orderIndex":80,"description":"Deep bit range mouth detail. Trade marriage position need religious mind tell. Both question now.","estimatedTime":"4 weeks"}'

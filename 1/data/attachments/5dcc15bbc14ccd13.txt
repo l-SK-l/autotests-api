@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE4OjQ4OjI3LjkxOTU5NSIsInVzZXJfaWQiOiI3NDkxZWI4Mi1lZGExLTRmZTEtOGE2OC1kMTc1ZTQyOWZkODYifQ.ADBVhZX3U8n9K5nn-m2F8gJqeMJWlesX_oJe0yLEf6Q' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kind keep section couple my.","maxScore":76,"minScore":27,"description":"Never ground it. Final fill million exactly place. Fight sure stuff station customer participant show doctor.\nAmerican go poor cover market very. Room tough Mrs.\nKey sport a left.","estimatedTime":"2 weeks","previewFileId":"37629af9-df7a-446b-8d6a-0ac96749c45f","createdByUserId":"7491eb82-eda1-4fe1-8a68-d175e429fd86"}'

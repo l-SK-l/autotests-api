@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE4OjQ4OjI1LjgxMDQ1MiIsInVzZXJfaWQiOiI2OWYxYWUxNS1mMzdiLTQyNWEtYmJiNy1lYWM0OTBkNjBmNWMifQ.3jdyzfxHvZCypFhwujfB_vUTcbD9IaNnn8E4_HuJ8kE' \
+  -H 'content-length: 340' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Base raise character evidence.","maxScore":83,"minScore":3,"description":"Trip forward herself enter risk find artist move. Play wind show long happen school school deep. Know film training.","estimatedTime":"1 weeks","previewFileId":"e9282df1-6b53-4b80-bfe2-87311031d13f","createdByUserId":"69f1ae15-f37b-425a-bbb7-eac490d60f5c"}'

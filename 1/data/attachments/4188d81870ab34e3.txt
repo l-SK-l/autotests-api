@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/bf1440d1-f80d-4537-a75b-a4e17ce0d66d' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE4OjQ4OjI3LjAwNzA4MCIsInVzZXJfaWQiOiIxYWM0ZDhlYi1hNTU0LTRjOTktOWM4Mi0yMzYyZmYwMzY0ZWQifQ.24GwmECBJQIG7A8hG2GL8osovp5_0kyheBNEaZuP2qg' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Updated Title","maxScore":80,"minScore":30,"orderIndex":88,"description":"Company its since raise mind develop. Democratic project concern who myself.\nSoldier business instead major crime. Book international court above war.","estimatedTime":"5 weeks"}'

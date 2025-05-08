@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE4OjQ4OjI1LjUzNzcyNSIsInVzZXJfaWQiOiI1NGExZDE2My0zZjcyLTQ0NTctYmUxNy0wNDE4Yjg0MTZhMzcifQ.-nEASxNOJsBeFeQ9PLQyEJcx8EWru_l1vfyNM70nnjo' \
+  -H 'content-length: 411' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Under fine she anyone reach environment result.","maxScore":66,"minScore":4,"description":"Push rule throughout rule drop. Financial they adult table. Reason similar glass.\nDinner sing charge enter scientist candidate. Line yeah significant usually her should.","estimatedTime":"2 weeks","previewFileId":"623284e6-8a35-417e-b0a1-728233396b72","createdByUserId":"54a1d163-3f72-4457-be17-0418b8416a37"}'

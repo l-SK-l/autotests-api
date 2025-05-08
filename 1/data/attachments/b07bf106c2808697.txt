@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE4OjQ4OjI0LjYyMzg0MSIsInVzZXJfaWQiOiJlYjY3MGIzZS03ZTI1LTQwOWQtYjAzZS0yNGFmMTBkN2E3ZjAifQ.w5Zj7I0NVXs8yhh0QjUgE01FZBI2zYfR6cyS2sr0nts' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Result change wide head few.","maxScore":72,"minScore":15,"description":"Fund factor major TV word. Seek building move fund.","estimatedTime":"2 weeks","previewFileId":"d30f0cd8-8f4e-4a76-8534-ffabdd552375","createdByUserId":"eb670b3e-7e25-409d-b03e-24af10d7a7f0"}'
