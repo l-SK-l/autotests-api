@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM1LjY3NjEwOCIsInVzZXJfaWQiOiIyYTVhZTNjNS0xNDJkLTRiNDMtODJjZi03M2IzMWFjZGM1NTMifQ.3OTGc2IAALkWQwIl12EVFDy_lmRIt9v81PMdobEqcas' \
+  -H 'content-length: 327' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Far recent play attention assume either research.","courseId":"58fc9fb3-8355-42ff-96d8-b85ebcd23fc4","maxScore":81,"minScore":12,"orderIndex":69,"description":"Different pretty fire board goal. Result community shake themselves.\nOpportunity improve eye push truth whatever question tend.","estimatedTime":"10 weeks"}'

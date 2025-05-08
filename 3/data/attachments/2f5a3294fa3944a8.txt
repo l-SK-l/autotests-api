@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM1LjY3NjEwOCIsInVzZXJfaWQiOiIyYTVhZTNjNS0xNDJkLTRiNDMtODJjZi03M2IzMWFjZGM1NTMifQ.3OTGc2IAALkWQwIl12EVFDy_lmRIt9v81PMdobEqcas' \
+  -H 'content-length: 393' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Car half garden fish play work dream.","maxScore":93,"minScore":23,"description":"Understand support total director feel record. Wear song whatever fall growth.\nDefense often Republican strong dinner whole. Local social pull majority father.","estimatedTime":"10 weeks","previewFileId":"3b5b8fc8-00ff-4953-8cf6-9b5c83d6b34b","createdByUserId":"2a5ae3c5-142d-4b43-82cf-73b31acdc553"}'

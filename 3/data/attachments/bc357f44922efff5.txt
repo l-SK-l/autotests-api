@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM3LjQ4NjAxNSIsInVzZXJfaWQiOiI1ZDU2MmIxOC1hZDY2LTQ2ZTgtOWY1My1iNDUzNjU0MDJlNzUifQ.TlSrE3NyI28bHV1_qHd-cXs7WMaPV04iIBafCYNNTQk' \
+  -H 'content-length: 410' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Place go situation project.","maxScore":53,"minScore":15,"description":"Public ahead forward. Almost still list brother scene country how. Sea everyone newspaper the. More out whom process.\nPull candidate protect conference thing base. Floor up thank a need.","estimatedTime":"10 weeks","previewFileId":"674e5e46-7170-4aca-b533-1948fcd452f1","createdByUserId":"5d562b18-ad66-46e8-9f53-b45365402e75"}'

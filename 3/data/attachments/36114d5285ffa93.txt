@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/e604b1a1-3fde-4d42-a6fb-82d66161c83c' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM0LjQzNjM3MiIsInVzZXJfaWQiOiIwZGMzODIyZi1iMjE3LTQ4MjAtYTQ0ZS01ZjQwNGM4NTliZmMifQ.TYZZAzt2mRq32eNKsANE8J4sYCQAG-R1adAILGlwOVc' \
+  -H 'content-length: 310' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Individual institution heart old sport.","maxScore":73,"minScore":2,"description":"Actually think paper director increase. Kid education boy line. Figure too accept.\nGround fast home remain policy face she. List nation call health. Growth body activity compare now power.","estimatedTime":"7 weeks"}'

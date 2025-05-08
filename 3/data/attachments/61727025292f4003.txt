@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM1LjA4NDU0NyIsInVzZXJfaWQiOiJiNjg2NmM4Zi0wNjZmLTRmZmUtOWZiOC0zNDU0ZjNjNDg1MDQifQ.JUZdUQ7nvbFjxpyFR3oZ13MzWmccNwIeft9wcfqvwIE' \
+  -H 'content-length: 364' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Them early sign fast way.","maxScore":68,"minScore":21,"description":"Add face test I feel. Money play nice Mr never. Particular agree finish ever forward performance hour. Whose let focus world help able society.","estimatedTime":"10 weeks","previewFileId":"373c1007-b1d7-43c2-bb2a-a29efabdd2f0","createdByUserId":"b6866c8f-066f-4ffe-9fb8-3454f3c48504"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjMzLjI2NDk3MyIsInVzZXJfaWQiOiI4NjFlYjFjNC0yYTczLTRiYTYtOGE3MC1kODBmZThiZDFkZGIifQ.JGcWZ06Mghe9cv27_W6UYPGLwnFfbihPjXKQMpDzhFM' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Power many time floor blood movie sea industry.","maxScore":59,"minScore":2,"description":"If majority page bill condition. Its trouble evidence morning opportunity. Word much window difference.\nAccount report protect very shake. Feel institution wide role.","estimatedTime":"2 weeks","previewFileId":"84f208de-0411-4405-b23d-66f0945786f6","createdByUserId":"861eb1c4-2a73-4ba6-8a70-d80fe8bd1ddb"}'

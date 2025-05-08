@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM2LjkwMTM1NCIsInVzZXJfaWQiOiIzODkxMWJjNi03NWFjLTRiOTgtODhiZi1iNzAyNjg2MmNiOTAifQ.ai9FBhmVKQFZ56bwpqvvLeNGCqxM2hWd05koW1hfdtA' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Lot practice treatment college while try right.","maxScore":68,"minScore":12,"description":"Account nearly especially sound clear race.\nWatch including nor. Use environment still concern. Value pick your environment. With sense teach general music Congress concern.","estimatedTime":"4 weeks","previewFileId":"c7b877ee-7555-4675-8921-d0b7ec1a5cd7","createdByUserId":"38911bc6-75ac-4b98-88bf-b7026862cb90"}'

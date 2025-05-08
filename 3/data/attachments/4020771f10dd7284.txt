@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM0LjQzNjM3MiIsInVzZXJfaWQiOiIwZGMzODIyZi1iMjE3LTQ4MjAtYTQ0ZS01ZjQwNGM4NTliZmMifQ.TYZZAzt2mRq32eNKsANE8J4sYCQAG-R1adAILGlwOVc' \
+  -H 'content-length: 366' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Science take service goal star under.","maxScore":74,"minScore":28,"description":"Majority wait plan case represent onto. Billion food less require. Sport continue themselves allow. Feel discussion next out cost you.","estimatedTime":"6 weeks","previewFileId":"d832375a-3a62-4c28-908d-c6cfe27d90ad","createdByUserId":"0dc3822f-b217-4820-a44e-5f404c859bfc"}'

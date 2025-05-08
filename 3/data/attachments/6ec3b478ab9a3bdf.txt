@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjM2LjkwMTM1NCIsInVzZXJfaWQiOiIzODkxMWJjNi03NWFjLTRiOTgtODhiZi1iNzAyNjg2MmNiOTAifQ.ai9FBhmVKQFZ56bwpqvvLeNGCqxM2hWd05koW1hfdtA' \
+  -H 'content-length: 292' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Most eye send past.","courseId":"a36acfd8-d915-4b2e-b70e-bf1500a7d672","maxScore":66,"minScore":1,"orderIndex":94,"description":"Executive alone probably manager recently reduce. Remember according anyone letter. Win include court better significant bag.","estimatedTime":"4 weeks"}'

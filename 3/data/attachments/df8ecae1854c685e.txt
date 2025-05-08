@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA4VDE5OjAyOjMzLjg1MTMyMSIsInVzZXJfaWQiOiJmMmYxMGE1YS04OGM4LTQxOTgtYjhlNi00NzNmMzg1YjM0YjAifQ.HymJHqDUASDek_SUYNiLhzOd7W3lj2T-xmh4B8LBE4o' \
+  -H 'content-length: 296' \
+  -H 'content-type: application/json' \
+  -d '{"title":"How improve relationship bill.","maxScore":88,"minScore":8,"description":"Eye with same develop space under. Leg before detail bad appear author.","estimatedTime":"10 weeks","previewFileId":"361539d2-0313-4123-a366-3e499c8ffd43","createdByUserId":"f2f10a5a-88c8-4198-b8e6-473f385b34b0"}'
