@@ -2,6 +2,7 @@ import allure
 from httpx import Response
 
 from clients.api_client import APIClient
+from clients.api_coverage import tracker
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, GetExerciseResponseSchema, GetExercisesQuerySchema, GetExercisesResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
 from tools.routes import APIRoutes
@@ -13,6 +14,7 @@ class ExercisesClient(APIClient):
     """
 
     @allure.step("Get exercises list with query parameters")
+    @tracker.track_endpoint(f"{APIRoutes.EXERCISES}")
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Метод получения списка упражнений.
@@ -27,6 +29,7 @@ class ExercisesClient(APIClient):
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
     @allure.step("Get exercise by ID {exercise_id}")
+    @tracker.track_endpoint(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получения упражнения.
@@ -41,6 +44,7 @@ class ExercisesClient(APIClient):
         return GetExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Create new exercise")
+    @tracker.track_endpoint(f"{APIRoutes.EXERCISES}")
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
         Метод создания упражнения.
@@ -56,6 +60,7 @@ class ExercisesClient(APIClient):
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Update exercise with ID {exercise_id}")
+    @tracker.track_endpoint(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def update_exercise_api(self, exercise_id: str,
                              request: UpdateExerciseRequestSchema) -> Response:
         """
@@ -74,6 +79,7 @@ class ExercisesClient(APIClient):
         return UpdateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Delete exercise with ID {exercise_id}")
+    @tracker.track_endpoint(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаления упражнения.
