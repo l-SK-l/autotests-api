@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA4LjgxMDA0MiIsInVzZXJfaWQiOiIwYmRkYzUyZi1iNzNkLTRiZDItYTQzZC1jNjVjYTA1OGI4MzIifQ.nVII4W9C6B8bH3DxttsanE65wUiR5fLsJ1Hrh_0flBA' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Memory such already social fine usually.","maxScore":65,"minScore":15,"description":"Best sound data set best.\nImagine day class while. Loss hope training pattern accept check. Manager dog type price opportunity mission land.","estimatedTime":"3 weeks","previewFileId":"99f04082-f638-4f4b-8c72-dbf64c305913","createdByUserId":"0bddc52f-b73d-4bd2-a43d-c65ca058b832"}'

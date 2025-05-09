@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA4LjIwMDI5NiIsInVzZXJfaWQiOiI5MjhmYjFlMS0yMmQyLTRiNTMtODdjZS1hYTdiYTg2ODhiODQifQ.jJysK7wHJPK3VlkukZMFUAfgoe8SWO-Zf5EJzUDJTEA' \
+  -H 'content-length: 369' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Senior bed finally this cut item blood bar.","courseId":"d881304b-6865-4dd8-bdbb-29b4a25b1a77","maxScore":67,"minScore":28,"orderIndex":28,"description":"Alone hard get.\nDifferent newspaper face tell moment child different. Professional thought already relationship later end. Describe describe indeed official yeah question idea.","estimatedTime":"3 weeks"}'

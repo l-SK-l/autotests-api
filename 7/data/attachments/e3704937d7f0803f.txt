@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA2LjMyNjg2OSIsInVzZXJfaWQiOiJhMTM5ZjFjNS00YTA0LTQwMzAtYjEzZC01NDBlM2UzNDUzNGIifQ.KO330moewW4CqPQbxAREADSHaVMAC2kId3eHcTCB6ko' \
+  -H 'content-length: 352' \
+  -H 'content-type: application/json' \
+  -d '{"title":"President process everything fire.","maxScore":87,"minScore":24,"description":"Upon matter still send he positive. Office open management service yourself cup.\nClearly note life quickly cold daughter.","estimatedTime":"10 weeks","previewFileId":"8e663c94-7f1d-42cc-93e7-75d2a0c1c346","createdByUserId":"a139f1c5-4a04-4030-b13d-540e3e34534b"}'

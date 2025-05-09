@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA3LjU1OTg1MiIsInVzZXJfaWQiOiJmMTQxMzllOS02NjE3LTQyNmUtOWFjNC0zMmExMTlmNmE3Y2UifQ.XoDr7T9fHpUiVz4xHBA0zI-Gu81E3nTF7NLMHgUrX4Y' \
+  -H 'content-length: 409' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Expect subject quite before.","maxScore":76,"minScore":21,"description":"Democrat responsibility science management TV likely. Audience a especially success along official. Vote off national inside at television then. Because Republican prevent thing another.","estimatedTime":"3 weeks","previewFileId":"2b970644-09ec-43d1-b4e6-d75fbfee8b31","createdByUserId":"f14139e9-6617-426e-9ac4-32a119f6a7ce"}'

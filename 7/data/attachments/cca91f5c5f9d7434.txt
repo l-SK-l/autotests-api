@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA1Ljc0MDkyMCIsInVzZXJfaWQiOiJhMTgyZTNlMC1jOTVjLTQ5YjctODZjYi04OTVmODc3NDFjODIifQ.4C7z6x-ymSZDF4d3pmGcdQKsjYz9bZ7QBqph2tYfiVY' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"I better inside.","maxScore":77,"minScore":9,"description":"Work long capital wonder lead health reality.\nTell and total good push. Know when majority inside really question bad. My available yourself everybody author writer.","estimatedTime":"2 weeks","previewFileId":"13c559e5-beb1-4b5d-bce9-6a6786dfc541","createdByUserId":"a182e3e0-c95c-49b7-86cb-895f87741c82"}'

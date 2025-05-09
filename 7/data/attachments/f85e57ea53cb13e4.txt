@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA4LjgxMDA0MiIsInVzZXJfaWQiOiIwYmRkYzUyZi1iNzNkLTRiZDItYTQzZC1jNjVjYTA1OGI4MzIifQ.nVII4W9C6B8bH3DxttsanE65wUiR5fLsJ1Hrh_0flBA' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Why event particularly stuff after artist.","courseId":"2210c5d0-4dae-4c00-902b-ac268ca03c2a","maxScore":59,"minScore":30,"orderIndex":99,"description":"Happy meeting on respond. Security area fear language concern happy religious.\nPoor door step development.\nDevelopment can raise language. Police economic heart their other grow collection imagine.","estimatedTime":"3 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA0LjU2NjUzOSIsInVzZXJfaWQiOiIzZDY2NWEzZS0zYmI4LTRmNWMtOTNmZi04NDgzYWZjZjZhZWIifQ.kvwnglaMaNZL7uL0-KCuGTBcbKROTe1LgOHfRa-3Xl4' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Decide again threat just.","maxScore":79,"minScore":10,"description":"Read father whole debate past. Former financial impact center first. Thing past role dog director.\nInterview each common store system. Site federal until together feeling bring then.","estimatedTime":"4 weeks","previewFileId":"6056ae1e-2574-4230-8e60-2281b123fe07","createdByUserId":"3d665a3e-3bb8-4f5c-93ff-8483afcf6aeb"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/0c48ada9-1308-47a0-b85a-c1f23e3725c1' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA1Ljc0MDkyMCIsInVzZXJfaWQiOiJhMTgyZTNlMC1jOTVjLTQ5YjctODZjYi04OTVmODc3NDFjODIifQ.4C7z6x-ymSZDF4d3pmGcdQKsjYz9bZ7QBqph2tYfiVY' \
+  -H 'content-length: 304' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Price family later should walk onto order.","maxScore":80,"minScore":14,"description":"South local oil program. Whom plant east.\nAnother left adult include community amount. Write woman with might bar but. Behavior better land coach usually social happy government.","estimatedTime":"6 weeks"}'

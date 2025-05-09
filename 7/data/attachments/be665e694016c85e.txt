@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA2LjMyNjg2OSIsInVzZXJfaWQiOiJhMTM5ZjFjNS00YTA0LTQwMzAtYjEzZC01NDBlM2UzNDUzNGIifQ.KO330moewW4CqPQbxAREADSHaVMAC2kId3eHcTCB6ko' \
+  -H 'content-length: 309' \
+  -H 'content-type: application/json' \
+  -d '{"title":"General home edge attack worry test.","courseId":"a2365010-42bc-4e24-af60-5b974ae1f4fd","maxScore":68,"minScore":26,"orderIndex":51,"description":"Practice senior four. Still himself whole PM future.\nYou activity my born. So here include these. Grow tough culture under.","estimatedTime":"3 weeks"}'

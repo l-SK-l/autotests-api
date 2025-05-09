@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA2Ljk2OTcxMSIsInVzZXJfaWQiOiI3OTU4ZjRjYS1mZDBkLTRjYjgtODdmYi0zYWM1YmMzYjM0NDUifQ.DixVUYLLqIJrmmW-18Cr9YglVwInF-5LpKMD4ns087c' \
+  -H 'content-length: 430' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Far recent bed none explain what why.","maxScore":91,"minScore":29,"description":"Ball base eye return eat without listen. Per own window mother address firm result.\nIssue gun home run clearly create large. Respond with second product serve. About president imagine relationship.","estimatedTime":"3 weeks","previewFileId":"a54add23-c721-45b2-adba-d5f23c448a1d","createdByUserId":"7958f4ca-fd0d-4cb8-87fb-3ac5bc3b3445"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA4LjIwMDI5NiIsInVzZXJfaWQiOiI5MjhmYjFlMS0yMmQyLTRiNTMtODdjZS1hYTdiYTg2ODhiODQifQ.jJysK7wHJPK3VlkukZMFUAfgoe8SWO-Zf5EJzUDJTEA' \
+  -H 'content-length: 285' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Heavy moment police wait.","maxScore":74,"minScore":8,"description":"Bag go blood boy building. Phone goal like itself machine imagine.","estimatedTime":"8 weeks","previewFileId":"860733d0-38bd-4393-ab1c-ae2062f902cf","createdByUserId":"928fb1e1-22d2-4b53-87ce-aa7ba8688b84"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEzOjI2OjA2Ljk2OTcxMSIsInVzZXJfaWQiOiI3OTU4ZjRjYS1mZDBkLTRjYjgtODdmYi0zYWM1YmMzYjM0NDUifQ.DixVUYLLqIJrmmW-18Cr9YglVwInF-5LpKMD4ns087c' \
+  -H 'content-length: 265' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Style before report within forget kid talk.","courseId":"82d39a5c-8780-44d5-9a13-be392c46e717","maxScore":57,"minScore":4,"orderIndex":80,"description":"New science tough quality religious board. Discuss lose condition herself.","estimatedTime":"3 weeks"}'
