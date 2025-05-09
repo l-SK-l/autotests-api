@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjExLjc3NjU1NSIsInVzZXJfaWQiOiI4N2MzZDY0YS0xMzQ0LTQ2YTctYTUxYi0yNzIzYTVjMGRlOGEifQ.2t4VaOYIRSvl0q_zyhRSbhTaAZmjcNdAKHfY0-X_IY8' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Customer improve make turn discussion forget.","maxScore":60,"minScore":25,"description":"Choice industry development real where decide. Lose raise American address smile.\nNow data contain nature take source similar. Possible receive build last safe.","estimatedTime":"2 weeks","previewFileId":"9c77229c-46f3-4ec7-9b72-cdbf3e59650b","createdByUserId":"87c3d64a-1344-46a7-a51b-2723a5c0de8a"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjEyLjk5Mzg4OCIsInVzZXJfaWQiOiI0NDRiNzc1Ni0xMDBlLTQ0YzYtOWFlMy0wYzJlMDVmNjg3MWQifQ.sYAxGn6q9Z0KVUHvs1UvPYCUvnZi-VBkn2aYw-x_XPc' \
+  -H 'content-length: 395' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wall system executive catch major spend.","maxScore":84,"minScore":18,"description":"While then inside next treatment bank. Final free course shoulder. Quickly three section compare bar lawyer.\nCan PM design role. Real game sort on understand.","estimatedTime":"10 weeks","previewFileId":"eaed7a42-2a43-44c3-8fde-381d3fae6f79","createdByUserId":"444b7756-100e-44c6-9ae3-0c2e05f6871d"}'

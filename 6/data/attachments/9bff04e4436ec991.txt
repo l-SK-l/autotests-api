@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjEzLjU4MjA5OSIsInVzZXJfaWQiOiJjMjA0NzY5Zi0yYzZjLTRiYTEtYjYzNC02MTY2MDU0ZWNhNjkifQ._ayM6bxM2XMde-kAU7BvajOl1lbTtKDFdeOH7V-mtT4' \
+  -H 'content-length: 430' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Shake role vote operation student physical.","maxScore":95,"minScore":14,"description":"Two total federal goal sure meeting than. Discover policy however past oil room develop. International difficult take one opportunity anything beat.\nAble rich it. Notice rise move Republican.","estimatedTime":"1 weeks","previewFileId":"d6d11fe4-d3cb-4b35-91d5-ae0200d1977b","createdByUserId":"c204769f-2c6c-4ba1-b634-6166054eca69"}'

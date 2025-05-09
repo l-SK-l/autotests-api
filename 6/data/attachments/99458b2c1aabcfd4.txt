@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/10a69723-6a5f-4062-8eaa-44a792302159' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjEyLjk5Mzg4OCIsInVzZXJfaWQiOiI0NDRiNzc1Ni0xMDBlLTQ0YzYtOWFlMy0wYzJlMDVmNjg3MWQifQ.sYAxGn6q9Z0KVUHvs1UvPYCUvnZi-VBkn2aYw-x_XPc' \
+  -H 'content-length: 271' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Meeting which piece anything term west.","maxScore":68,"minScore":26,"description":"System option anyone bag sea support cause. Big decide most light.\nToday politics condition director important point window. Must door card process.","estimatedTime":"2 weeks"}'

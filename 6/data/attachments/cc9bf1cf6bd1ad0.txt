@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjE1LjQ2MDMwNSIsInVzZXJfaWQiOiIwZTM3NTkxZi02NTNhLTRhYjktOGVlZS02YTYzMTg0MDE1MjkifQ.JsD3CEbR-x_ZqGr_lKLv2n6SbtxO2bJFWkF-RObPbCo' \
+  -H 'content-length: 320' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Prove institution third goal.","courseId":"7d0c0e8c-22c3-4cfa-9074-5df4856f7bfa","maxScore":59,"minScore":1,"orderIndex":15,"description":"Past southern window. Explain sing term bad phone majority.\nStand party light environmental thought. Conference policy sign imagine meet talk.","estimatedTime":"8 weeks"}'

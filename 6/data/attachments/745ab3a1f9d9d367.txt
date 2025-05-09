@@ -1,0 +1,20 @@
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:30 Make DELETE request to http://localhost:8000/api/v1/exercises/5f825260-004e-4b76-81ed-6e908e79f4d5
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/exercises/5f825260-004e-4b76-81ed-6e908e79f4d5
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     HTTP_CLIENT:event_hooks.py:30 Make GET request to http://localhost:8000/api/v1/exercises/5f825260-004e-4b76-81ed-6e908e79f4d5
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 404 Not Found from http://localhost:8000/api/v1/exercises/5f825260-004e-4b76-81ed-6e908e79f4d5
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 404
+INFO     EXERCISES_ASSERTIONS:exercises.py:130 Verify exercise not found error response
+INFO     ERRORS_ASSERTIONS:errors.py:22 Check validation error response
+INFO     BASE_ASSERTIONS:base.py:37 Check that "details" equals to Exercise not found
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

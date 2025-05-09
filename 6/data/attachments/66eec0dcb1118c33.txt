@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjE1LjQ2MDMwNSIsInVzZXJfaWQiOiIwZTM3NTkxZi02NTNhLTRhYjktOGVlZS02YTYzMTg0MDE1MjkifQ.JsD3CEbR-x_ZqGr_lKLv2n6SbtxO2bJFWkF-RObPbCo' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Dinner after three.","maxScore":77,"minScore":24,"description":"Step fire develop system. However son play American machine life stay sense. Allow customer short.\nBlack former tell their. Chance manager next during deep effect wall.","estimatedTime":"8 weeks","previewFileId":"c9d8b098-733b-42ae-9e67-0378c9da71e3","createdByUserId":"0e37591f-653a-4ab9-8eee-6a6318401529"}'

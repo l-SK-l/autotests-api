@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjE0LjgxMzE4MyIsInVzZXJfaWQiOiJmNDU5MmU5NS0wYTk1LTQ0NzMtYTA0Zi04NDgwYTRmY2UxNDEifQ.Js5VQYCAf5NqWxYxjOBQb2OLqkbQuItwkrzkdKSITtM' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Exactly wait mind walk policy.","maxScore":53,"minScore":14,"description":"Job really recognize ability. Ten far moment name person machine. Grow others town third defense other.\nAfter particular personal season example stock. Receive while prevent nature would can chance.","estimatedTime":"5 weeks","previewFileId":"b69ca8e1-13a8-4c60-8abc-3021980a63b3","createdByUserId":"f4592e95-0a95-4473-a04f-8480a4fce141"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjE0LjIzMjMwMyIsInVzZXJfaWQiOiI4OGE0OTBiMC00MzAzLTRiZGUtYmIyNC0yM2MwYTgwYzRmOGIifQ.-pMPgfff-tzEql62gc8ebkvu1VX3Lskee35Mnrx9hgI' \
+  -H 'content-length: 397' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Stay show born parent majority.","maxScore":94,"minScore":16,"description":"Rich social item vote. Administration believe amount point.\nStaff they show education throughout as hundred. All receive ground start against.\nMedia great hand marriage.","estimatedTime":"7 weeks","previewFileId":"303d1cde-ae01-4721-824a-05e8ddb539e4","createdByUserId":"88a490b0-4303-4bde-bb24-23c0a80c4f8b"}'

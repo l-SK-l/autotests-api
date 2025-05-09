@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:30 Make GET request to http://localhost:8000/api/v1/exercises/c1ec6071-7455-4f77-bb79-fa62a9aa15cd
+INFO     HTTP_CLIENT:event_hooks.py:40 Got response 200 OK from http://localhost:8000/api/v1/exercises/c1ec6071-7455-4f77-bb79-fa62a9aa15cd
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:89 Verify get exercise response matches created exercise
+INFO     EXERCISES_ASSERTIONS:exercises.py:45 Compare exercise data with expected values
+INFO     BASE_ASSERTIONS:base.py:37 Check that "id" equals to c1ec6071-7455-4f77-bb79-fa62a9aa15cd
+INFO     BASE_ASSERTIONS:base.py:37 Check that "title" equals to Outside return suddenly lead ball pressure.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "course_id" equals to 1c6a3458-3c4a-4e8e-9396-34f10daa765e
+INFO     BASE_ASSERTIONS:base.py:37 Check that "max_score" equals to 72
+INFO     BASE_ASSERTIONS:base.py:37 Check that "min_score" equals to 10
+INFO     BASE_ASSERTIONS:base.py:37 Check that "order_index" equals to 81
+INFO     BASE_ASSERTIONS:base.py:37 Check that "description" equals to Continue him trip themselves. Western control perhaps approach arrive student among.
+Relate guess join address. Of such that third improve should. Space how catch.
+INFO     BASE_ASSERTIONS:base.py:37 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

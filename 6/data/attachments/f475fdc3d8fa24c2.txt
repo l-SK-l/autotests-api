@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/18b169b0-0b86-4af7-ac04-d66e6e13bfe0' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDEyOjEwOjE1LjQ2MDMwNSIsInVzZXJfaWQiOiIwZTM3NTkxZi02NTNhLTRhYjktOGVlZS02YTYzMTg0MDE1MjkifQ.JsD3CEbR-x_ZqGr_lKLv2n6SbtxO2bJFWkF-RObPbCo' \
+  -H 'content-length: 288' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Updated Title","maxScore":67,"minScore":30,"orderIndex":10,"description":"Ago nature less so someone. Sell reveal none everyone give property us from.\nSingle wonder happen how. Best key order table attention when. Economic ok notice strategy lot my.","estimatedTime":"8 weeks"}'
