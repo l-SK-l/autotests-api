@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjM0LjU2NTUzNCIsInVzZXJfaWQiOiJiNDNkMWVmYi1iMmQ0LTQ1Y2MtYTJiZi0zNGMxZWNlNWJhNjMifQ.u6lzXprHpjxvBj3cspC3tZYnaiIOVTA4xrBuByB938M' \
+  -H 'content-length: 425' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Parent hotel ten detail week only.","maxScore":71,"minScore":20,"description":"Item others blood choice spring. Study several they program thus keep.\nNothing here its hotel. Left decide democratic heavy. Shake everything military drop.\nIn scene voice ago police government.","estimatedTime":"9 weeks","previewFileId":"d57e7ee4-6a68-4b79-a24f-b3f0363519b3","createdByUserId":"b43d1efb-b2d4-45cc-a2bf-34c1ece5ba63"}'

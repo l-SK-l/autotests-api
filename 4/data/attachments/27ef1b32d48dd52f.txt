@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjM1LjE1NDA2NiIsInVzZXJfaWQiOiIyNmZhODg0NS1kYmVkLTQ3ZDctOGNkZS1kOTM3ZTZlNTVjYTMifQ.cHSYEMGGxfr3K8lSDi1Py5YgNr8MrpcmIqcwgS1a9X4' \
+  -H 'content-length: 393' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Continue into close meeting forget agent cost.","maxScore":62,"minScore":21,"description":"Rate cultural physical dream drop question also. Mother finally spring international indeed teacher. Camera teacher color somebody drug figure evidence.","estimatedTime":"2 weeks","previewFileId":"7f09d4df-0f25-4306-bf10-58fab3a3b656","createdByUserId":"26fa8845-dbed-47d7-8cde-d937e6e55ca3"}'

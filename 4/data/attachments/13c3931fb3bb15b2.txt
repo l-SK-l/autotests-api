@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjM1LjgwMDYwOSIsInVzZXJfaWQiOiJiODY0YTI0MC01MDAwLTRiMGQtOWUwOS1mOGE1ZWIxOTY2YzUifQ.0WK3uGOaQTh2hTEoUjjir5iTgf7NqekRaDs2Hlb1lBY' \
+  -H 'content-length: 354' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Live help dinner dog present machine become.","maxScore":68,"minScore":16,"description":"Explain federal director money. East offer participant reality sit year dinner. Entire growth shake concern season.","estimatedTime":"6 weeks","previewFileId":"ec976292-f829-48e7-82a3-88b53ab821f9","createdByUserId":"b864a240-5000-4b0d-9e09-f8a5eb1966c5"}'

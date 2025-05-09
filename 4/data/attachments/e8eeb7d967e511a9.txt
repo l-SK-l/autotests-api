@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjM2Ljk4NDU0MCIsInVzZXJfaWQiOiIwNjNhOWY2MC04NjAwLTQwNWUtOTgyMy05ZmE5ODgwZjEzMmIifQ.V45uu1eGBQmuwI0rjn3lqZZa5qN8X8ODohiivR8x11U' \
+  -H 'content-length: 355' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Night sit ever art.","maxScore":99,"minScore":19,"description":"True animal care send prepare whether. Hope people avoid special history that drop order.\nExecutive culture sign. Pay set which perform yet.","estimatedTime":"1 weeks","previewFileId":"104ffbbf-7f0d-4e7e-ab08-3bf862f025ca","createdByUserId":"063a9f60-8600-405e-9823-9fa9880f132b"}'

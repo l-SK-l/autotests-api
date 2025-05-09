@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/2ddbc8d7-6e3b-4c81-a2bf-75e644badc90' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjMzLjk3MDc2NiIsInVzZXJfaWQiOiJkOGIxZTBkZi1hYjc5LTRhODMtYWQwOC0wNzgwZmIwM2U2NGMifQ.QM1sZ2uBGOAf3FjIhHsPOykUL8JdmutpNN1r-S6NkLg' \
+  -H 'content-length: 271' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Clearly accept skin.","maxScore":51,"minScore":3,"description":"Now be exactly image myself. Open someone music by series sell.\nRun within as should. Shake bar hundred TV throughout work scene. Commercial can study rich effect join.","estimatedTime":"4 weeks"}'

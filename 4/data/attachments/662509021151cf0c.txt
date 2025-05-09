@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjM0LjU2NTUzNCIsInVzZXJfaWQiOiJiNDNkMWVmYi1iMmQ0LTQ1Y2MtYTJiZi0zNGMxZWNlNWJhNjMifQ.u6lzXprHpjxvBj3cspC3tZYnaiIOVTA4xrBuByB938M' \
+  -H 'content-length: 290' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Large experience air hit last daughter policy.","courseId":"11a911b2-c525-4951-a8ba-4def38f8f3ab","maxScore":89,"minScore":14,"orderIndex":49,"description":"Crime of wait trip fly. Half focus tell level rate its total. Thus here outside its all modern.","estimatedTime":"7 weeks"}'

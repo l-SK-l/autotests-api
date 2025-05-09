@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjM2LjM4NTQ3MCIsInVzZXJfaWQiOiI0NmIzNTVmNy1kOGMzLTRhNTMtYmNjZS02ZDJkN2Y0NTFlMjIifQ.fy6p9-gVyNz8N7A7kOytgEf1-gpuStm47XxD4HEBOjM' \
+  -H 'content-length: 414' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Prove something chance gun especially.","maxScore":59,"minScore":19,"description":"Design certain change or maybe. Somebody war whatever trial attention we.\nThink control fund choice good structure before along. Attorney order single current prove camera example.","estimatedTime":"3 weeks","previewFileId":"43778ec1-37f8-44ed-9f83-bfa32a113352","createdByUserId":"46b355f7-d8c3-4a53-bcce-6d2d7f451e22"}'

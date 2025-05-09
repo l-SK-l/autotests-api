@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjMzLjk3MDc2NiIsInVzZXJfaWQiOiJkOGIxZTBkZi1hYjc5LTRhODMtYWQwOC0wNzgwZmIwM2U2NGMifQ.QM1sZ2uBGOAf3FjIhHsPOykUL8JdmutpNN1r-S6NkLg' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Whatever stop forget true nothing century.","maxScore":82,"minScore":24,"description":"Rock dream when carry reason nothing data. Teacher sell church certainly job wall.\nTravel expect market degree. Pm cover none mind thank project.","estimatedTime":"2 weeks","previewFileId":"1060b857-5f47-45ab-be88-980e5f9be120","createdByUserId":"d8b1e0df-ab79-4a83-ad08-0780fb03e64c"}'

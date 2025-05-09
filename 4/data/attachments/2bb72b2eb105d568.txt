@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjMyLjc5OTk5MSIsInVzZXJfaWQiOiI2YjhlYjc4Mi1iNTYxLTQwYTUtOGRiMi04ZjIwZGJmNjgyYmYifQ.xT8379hqlh9D2IQ6ctB0i-rYk8Y84-oFZMCjaT3IKWk' \
+  -H 'content-length: 398' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sister newspaper operation particular hour.","maxScore":85,"minScore":28,"description":"Trade performance side low. Positive hair apply let wish although science. Artist top miss voice behavior personal.\nBusiness strategy fish authority face fill.","estimatedTime":"3 weeks","previewFileId":"c731a17d-b1ca-47d5-9302-87ad080457f9","createdByUserId":"6b8eb782-b561-40a5-8db2-8f20dbf682bf"}'

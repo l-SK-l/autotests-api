@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA1LTA5VDExOjUzOjM2LjM4NTQ3MCIsInVzZXJfaWQiOiI0NmIzNTVmNy1kOGMzLTRhNTMtYmNjZS02ZDJkN2Y0NTFlMjIifQ.fy6p9-gVyNz8N7A7kOytgEf1-gpuStm47XxD4HEBOjM' \
+  -H 'content-length: 315' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kind few continue fly use fear us.","courseId":"b7d7f6c6-1918-4e8c-9740-423563cc8335","maxScore":64,"minScore":10,"orderIndex":89,"description":"Think enter during office inside treat single reason. Officer laugh require executive the attention somebody. Between figure run go.","estimatedTime":"7 weeks"}'
